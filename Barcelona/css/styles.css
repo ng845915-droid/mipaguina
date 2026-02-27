@@ -1,0 +1,116 @@
+:root {
+    --fcb-azul: #004d98;
+    --fcb-grana: #a50044;
+    --fcb-amarillo: #ffed00;
+    --fcb-dark: #003262; 
+    --fcb-white: #ffffff;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color: #ffffff;
+}
+
+
+.navbar {
+    background-color:var(--fcb-azul);
+    color: var(--fcb-white);
+}
+
+footer {
+
+    background-color: var(--fcb-dark) !important;
+    color: var(--fcb-dark) !important;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 4px solid var(--fcb-grana);
+}
+    footer img {
+    max-height: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.bg-fcb-dark {
+    background-color: var(--fcb-dark) !important;
+}
+
+.bg-fcb-dark {
+    background-color: var(--fcb-dark) !important;
+}
+
+.text-fcb-white {
+    color: var(--fcb-white) !important;
+}
+
+footer a {
+    color: var(--fcb-white);
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--fcb-amarillo) !important;
+}
+
+
+.timeline-item{
+border-left: 3px solid var(--fcb-azul);
+padding: 0 0 2rem 2rem;
+position: relative;
+}
+
+.timeline-tear{
+    font-weight: bold;
+    color: var(--fcb-azul);
+}
+
+.timeline-item::before{
+    content: '';
+    left: -9px;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--fcb-grana);
+    position: absolute;
+}
+
+.navbar-brand img{
+    transition: 0.2s ease;
+}
+.navbar-brand:hover img{
+    transform: scale(1.1) rotate(5deg);
+}
+.nav-link{
+    color: var(--fcb-amarillo);
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.2s ;
+    margin: 0 10px;
+}
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--fcb-amarillo);
+    transition: all 0.2s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after{
+    width: 100%;
+}
+
+.nav-link:hover,
+.nav-link.active{
+    color: #a40505;
+}
+
